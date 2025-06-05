@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
@@ -17,7 +17,7 @@ body {
 }
 
 .game {
-    height:60vmin ;
+    height: 60vmin;
     width: 60vmin;
     display: flex;
     flex-wrap: wrap;
@@ -31,10 +31,10 @@ body {
     width: 18vmin;
     border-radius: 1rem;
     border: none;
-   box-shadow: 0 0 1rem rgba(0,0,0,0.3);
-   font-size: 9vmin;
-   color:#b0413e;
-   background-color: #ffffc7;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+    font-size: 9vmin;
+    color: #b0413e;
+    background-color: #ffffc7;
 }
 
 #reset-button {
@@ -53,13 +53,11 @@ body {
     color: #fff;
     border-radius: 1rem;
     border: none;
-
 }
 
 #msg {
     color: #ffffc7;
     font-size: 5vmin;
-
 }
 
 .msg-container {
@@ -68,4 +66,29 @@ body {
 
 .hide {
     display: none;
+}
+
+/* ✅ Responsive Styles */
+@media (max-width: 600px) {
+    .game {
+        width: 90vmin;
+        height: 90vmin;
+    }
+
+    .box {
+        width: 28vmin;
+        height: 28vmin;
+        font-size: 10vmin;
+    }
+
+    #reset-button,
+    #new-button {
+        width: 80%;
+        margin-top: 1rem;
+        font-size: 1rem;
+    }
+
+    #msg {
+        font-size: 7vmin;
+    }
 }
